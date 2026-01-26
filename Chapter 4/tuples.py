@@ -1,0 +1,5 @@
+food = ("pizza", "burger", "pasta", "salad", "sushi")
+print("Original tuple:", food)
+print("Length of tuple:", len(food))
+print("Third item in the tuple:", food[2])
+print("Last item in the tuple:", food[-1])
