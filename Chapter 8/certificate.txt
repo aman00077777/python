@@ -1,0 +1,4 @@
+Live Score = 78
+Total Score = 100
+Percentage = 78%
+Score to win = 90

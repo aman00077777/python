@@ -1,0 +1,4 @@
+I am learning Python from YouTube.
+```text
+I am a self-driven learner currently mastering Python through educational content on YouTube. My passion for programming drives me to explore new concepts and apply them to real-world scenarios as I build a strong foundation in software development.
+```
