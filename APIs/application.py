@@ -32,3 +32,23 @@ def get_drinks():
         output.append(drink_data)
 
     return {"drinks": output}
+
+
+from flask import request  # Make sure to add 'request' to your imports at the top!
+
+
+@app.route("/drinks", methods=["POST"])
+def add_drink():
+    # 1. Grab the JSON data sent to the API
+    data = request.get_json()
+
+    # 2. Create a new Drink object instance
+    new_drink = Drink(name=data["name"], description=data["description"])
+
+    # 3. Add and commit to your database
+    db.session.add(new_drink)
+    db.session.commit()
+
+    # 4. Return the newly created item and a 201 Created status code
+    return {"id": new_drink.id}, 201
+
